@@ -1,1 +1,108 @@
+#importing password, system and telnet libraries
+import getpass
+import sys
+impor  telnetlib
+
+HOST = "ip"
+user = input("enter")
+password=password.getpass()
+tn = telnetlib.telnet(HOST)
+
+
+
+
+for n in range(1, 101)
+tn.write("vlan" + str(n) + \n)
+tn.write(name "vlan1" + str(n) + \n)
+
+
+
+
+
+multiple switches, multiple vlans
+for n in range (72,77):
+   print("telnet to host") + str(n)
+  tn = telnetlib.telnet(host)
+  
+  tn.read_until("username":)
+  tn.write("user + \n")
+  if password:
+     tn.read_until("password")
+     tn.write("password" + \n")
+     
+     tn.write("conf \n")
+     
+     for n in range (1,21):
+      tn.write("vlan" + str(n) + \n)
+      tn.wrtie("name vlan1 + str(n) + "\n")
+      
+      tn.write("end\n")
+      tn.write("exit\n")
+      print(tn.read_all())
+      
+      
+      
+      f = open ("filename")
+      
+      for line in f:
+          print ("conf sw " + (line))
+          HOST = line
+          
+          
+          
+          
+          
+          
+          
+          from netmiko import ConnectHandler
+          
+          iosv_12 = {
+          device_type : cisco
+          ip : 
+          username
+          password:
+          }
+          
+          netconnect = connecthamdler(**iosv_12)
+          output = netconnect.sendcommand(sh ip int br)
+            print (output)
+            
+            config_cmds = [int looop...]
+            output = netconenct.sendconf_set(config_cmds)
+            print output
+            
+            all_devices = [s1, s1, s3]
+            
+            for devices in all_devices:
+              net_connect = connecthandler(**devices)
+              
+              
+              
+              from napalm get import_network_driver
+              driver = get_network_driver(ios)
+              iosvl2 = driver(ip, un, pw)
+              iosvl2.open()
+              
+              print iosvl2.get_facts()
+              ios_op = iosvl2.get_mac_addr_table()
+              print(json_dumps(ios_op))
+              
+              iosvl2.close()
+              
+              
+              #napalm and BGP
+              ios_op = iosvl2.get_facts()
+              print (json.dumps(bgp_nei))
+              
+              bgp_nei = iosvl2.get_bgp_nei()
+               print (json.dumps(bgp_nei))
+               
+               iosvl2.close()
+               
+               
+               
+               bgp_list = [all ips]
+               
+               for ip in bgp_list:
+               print("connecting to" + str(ip))
 
